@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+
+{% block contenido_central %}
+
+{% load static %}
+
+<h1 class="text-light m-4">Nuestros Empleados</h1>
+
+<ul class="nav nav-underline m-5 d-flex justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'mostrar' %}">Mostrar</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'agregar' %}">Agregar</a>
+    </li>
+</ul>
+
+
+{% endblock %}

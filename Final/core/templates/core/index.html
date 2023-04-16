@@ -1,0 +1,96 @@
+{% extends 'core/base.html' %}
+
+{% block contenido_central %}
+
+{% load static %}
+
+<div id="templatemo_content">
+    <div id="templatemo_content_left">
+        
+        <div class="templatemo_post">
+            <div class="post_title">
+                Free Blog Template
+                <div class="post_info">
+                    Posted by <a href="#">Admin</a>, December 7, 2024 at 2:13 am, in <a href="#">Web Template.</a>
+                </div>
+            </div>
+            
+            <div class="post_body">
+                <img src="{% static 'core/images/templatemo_image_01.jpg' %}" alt="" />
+                <p>This is a free blog template provided by TemplateMo website. You may download, modify and apply this CSS layout for your personal or business websites.</p>
+                <p>Credit goes to <a rel="nofollow" href="http://www.photovaco.com" target="_blank">photovaco.com</a> for photos.</p>
+            
+            </div>
+            <div class="post_comment">
+                <a href="#">12 comments</a></div>
+        </div> <!-- end of post two -->
+        
+        <div class="templatemo_post">
+            <div class="post_title">
+                HTML CSS Website Layout
+                <div class="post_info">
+                    Posted by <a href="#">Admin</a>, December 2, 2024 at 6:45 am, in <a href="#">Web Template.</a>
+                </div>
+            </div>
+            
+            <div class="post_body">
+                <img src="{% static 'core/images/templatemo_image_02.jpg' %}" alt="" />
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc quis sem nec tellus blandit tincidunt. Suspendisse hendrerit turpis id augue.</p>
+                <p>Suspendisse at pede vel lorem pulvinar laoreet. Etiam et neque. Donec dapibus viverra est. Maecenas dignissim, quam a posuere scelerisque, ligula arcu dictum turpis, id tempus turpis erat at nulla.</p>
+            </div>
+            <div class="post_comment">
+                <a href="#">No comment</a></div>
+        </div> <!-- end of post two -->
+
+        
+    </div> <!-- end of content left -->
+
+    <div id="templatemo_content_right">
+    
+        <div class="templatemo_right_section">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">Morbi nec magna pulvinar</a></li>
+                <li><a href="#">Suspendisse rhoncus lectus</a></li>
+                <li><a href="#">Pellentesque rutrum est</a></li>
+                <li><a href="#">Nunc blandit orci</a></li>
+            </ul>    
+        </div>
+        
+        <div class="templatemo_right_section">
+            <h2>Archives</h2>
+            <ul>
+                <li><a href="#">January 2024</a></li>
+                <li><a href="#">December 2023</a></li>
+                <li><a href="#">November 2023</a></li>
+                <li><a href="#">October 2023</a></li>
+                <li><a href="#">September 2023</a></li>
+            </ul>  
+        </div>
+        
+        <div class="templatemo_right_section">
+            <h2>Popular Posts</h2>
+            <ul class="popular_post">	
+                <li><a href="#">Donec mollis aliquet</a><br />Author 1 - Oct 14, 2024 <span class="comment">12 replies</span></li>
+                <li><a href="#">Aliquam tristique lacust</a><br />Author 2 - Oct 14, 2024 <span class="comment">8 replies</span></li>
+                <li><a href="#">Suspendisse potent</a><br />Author 3 - Oct 14, 2024 <span class="comment">10 replies</span></li>
+                <li><a href="#">Nullam vitae tellus</a><br />Author 4 - Oct 14, 2024 <span class="comment">30 replies</span></li>
+            </ul>
+        </div>
+        
+        <div class="templatemo_right_section">
+            <h2>Recent Comments</h2>
+            <ul>	
+                <li>Lorem Ipsum on <a href="#">Donec mollis aliquet</a></li>
+                <li>Consectetuer on <a href="#">Suspendisse a nibh</a></li>
+                <li>Sed on <a href="#">Pellentesque vitae magna</a></li>
+                <li>Vitae Neque on <a href="#">Nunc blandit orci sit amet</a></li>
+                <li>Donec Mollis on <a href="#">Maecenas adipiscing</a></li>
+            </ul>
+        </div>
+        
+    </div> <!-- end of right content -->
+</div> <!-- end of content -->
+</div> <!-- end of content container -->
+
+{% endblock %}

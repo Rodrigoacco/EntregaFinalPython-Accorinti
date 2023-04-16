@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+
+{% block contenido_central %}
+
+{% load static %}
+
+<form action="" method="POST">
+    {% csrf_token %}
+<table class=" text-light  m-5 d-flex justify-content-center">
+    {{ form.as_table }}
+</table>
+<input type="submit" value="Editar" class="btn btn-success mx-auto p-2" style="width: 200px;">
+</form>
+
+{% endblock %}

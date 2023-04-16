@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+
+{% block contenido_central %}
+
+{% load static %}
+
+
+<table class="table text-light col-md-12 text-center">
+    <thead>
+        <tr>
+            <th scope="col" width="20%"">Id</th>
+            <th scope="col" class="text-start aling-midle" width="40%">Nombre</th>
+            <th scope="col" class="text-start aling-midle" width="40%">Año Nacimiento</th>
+        </tr>
+    </thead>
+    {% for equipo in empleados %}
+    <tbody>
+        <tr>
+                <td width="10%">{{ equipo.id }}</td>
+                <td class="text-start aling-midle" width="35%">{{ equipo.nombre }}</td>
+                <td class="text-start aling-midle" width="35%">{{ equipo.camada }}</td>
+                <td class="text-start aling-midle" width="10%"><a href="{% url 'editar' equipo.id %}">Editar</a></td>
+                <td class="text-start aling-midle" width="10%"><a href="{% url 'eliminar' equipo.id %}">Eliminar</a></td>
+        </tr>
+    </tbody>
+    {% endfor %}
+</table>
+
+{% endblock %}
