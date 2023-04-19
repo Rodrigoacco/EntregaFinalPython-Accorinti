@@ -16,5 +16,5 @@ urlpatterns = [
 urlpatterns += [
     path('login/', login_request, name="login"),
     path('register/', register, name="registro"),
-    path('logout/', LogoutView.as_view(template_name='core/logout.html'), name="Logout"),
+    path('logout/', LogoutView.as_view(template_name='core/logout.html'), name="logout"),
 ]

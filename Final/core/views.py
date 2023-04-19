@@ -104,4 +104,3 @@ def register(request):
     
     form = UserRegisterForm()
     return render(request, "core/registro.html", {"form": form, "msj": msj})
-
