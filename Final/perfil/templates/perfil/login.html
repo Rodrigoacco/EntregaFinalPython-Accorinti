@@ -1,14 +1,8 @@
-
 {% extends 'core/base.html' %}
 
 {% block contenido_central %}
-
-<div class=" text-light  m-5 d-flex justify-content-center">
-
-    {{ msj }}
-
-</div>
-<form action="" method="POST" class=" text-light  m-5 d-flex justify-content-center">
+{{ msj }}
+<form action="" method="POST">
 
     {% csrf_token %}
 
