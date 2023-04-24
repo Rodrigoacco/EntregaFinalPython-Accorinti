@@ -6,11 +6,10 @@
 
 
 <div class=" text-light  m-5 d-flex justify-content-center">
-
-    {{ msj }}
-
+    <h1>
+        {{ msj }}
+    </h1>
 </div>
-<br>
 {% if request.user.is_authenticated %}
     <button><a href="{% url 'Logout' %}">Salir</a></button>
 {% endif %}

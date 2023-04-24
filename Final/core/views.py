@@ -22,7 +22,6 @@ def inicio(request):
     total = cache.get("contador", 0)
     total += 1
     cache.set("contador", total)
-    print(f"\n\nCACHE:\n{cache.get('contador')}\n\n")
     try:
         avatar = Avatar.objects.get(user=request.user)
         context = {'imagen': avatar.imagen.url}

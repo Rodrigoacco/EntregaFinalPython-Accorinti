@@ -10,7 +10,7 @@ from perfil.utilities.user_profile import clean_avatar_record_without_user
 # Create your views here.
 
 def login_request(request):
-    msj = ""
+    msj = "Bienvenido"
     if request.method == "POST":
         form = AuthenticationForm(request, data=request.POST)
         if form.is_valid():
@@ -18,12 +18,12 @@ def login_request(request):
             contra = form.cleaned_data.get('password')
             user = authenticate(username=usuario, password=contra)
 
-            if user:
+            if user is not None:
                 login(request, user)
                 if request.GET.get('next'):
                     return redirect(request.GET.get('next'))
                 else:
-                    return render(request, 'core/index.html')
+                    return render(request, "core/index.html", {"msj": f"Bienvenido {usuario}"})
             else:
                 msj = "ERROR DE USUARIO"
         else:
